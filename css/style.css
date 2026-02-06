@@ -584,7 +584,7 @@ body:has(#themeToggle:checked) {
 
   .offer-card-collage {
     margin-bottom: 70px;
-  } 
+  }
 
   .main-subtitle {
     margin-bottom: 50px;
@@ -596,29 +596,77 @@ body:has(#themeToggle:checked) {
   }
 
   .stories-section {
-  display: flex;
-  gap: 63px;
-  text-align: center;
-  flex-wrap: wrap;
-  max-width: 500px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+    display: flex;
+    gap: 63px;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .sign-up {
+    height: 400px;
+  }
+
+  .sign-up-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .email-input {
+    margin-right: 0;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
 }
 
-.sign-up {
-  height: 400px;
-}
 
-.sign-up-form {
-  flex-direction: column;
-  gap: 15px;
-}
+@media screen and (max-width: 500px) {
 
-.email-input {
-  margin-right: 0;
-}
+  .offer-card-img {
+    padding-left: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
- .footer {
-  flex-wrap: wrap;
- }
-}  
+  .offer-card-collage {
+    display: flex;
+    gap: 5px;
+  }
+
+  .mug-img {
+    width: 100%;
+  }
+
+   .stories-section {
+    gap: 50px;
+    padding: 0 20px;
+  }
+
+   .sign-up {
+    height: 450px;
+   }
+
+   .sign-up-form {
+    flex-direction: column;
+    gap: 15px;
+   }
+
+   .email-input {
+    width: 100%;
+   }
+
+   .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+   }
+
+   .footer-text{
+    margin: 20px 0 50px 0;
+   }
+
+  }
